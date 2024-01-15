@@ -43,7 +43,8 @@ Each microservice has its separate MongoDB database, except for the Expiration S
   - We use Skaffold for ease of local development.
 
 - **Deployment:**
-  - Kubernetes is utilized for deployment.
+  - Github actions is used for unit-testing and automating deployment.
+  - Kubernetes is utilized for container orchestration.
   - Docker Hub stores all the latest images for the services.
 
 ## Technologies Used
@@ -62,6 +63,7 @@ Each microservice has its separate MongoDB database, except for the Expiration S
 Before running the project locally, ensure you have the following prerequisites installed:
 
 - [Docker](https://www.docker.com/get-started)
+- [Minikube](https://minikube.sigs.k8s.io/docs/start/)
 - [Skaffold](https://skaffold.dev/docs/install/)
 
 ### Local Development
@@ -72,7 +74,7 @@ Before running the project locally, ensure you have the following prerequisites 
 2. Navigate to the project directory:
     ```bash
    cd ticketing-platform
-   ```
+3. Ensure your kubectl context is directed to minikube
 3. Run Skaffold in development mode:
     ```bash
    skaffold dev
