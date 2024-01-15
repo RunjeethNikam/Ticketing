@@ -19,7 +19,7 @@ const SignUp = () => {
 
   return (
     <form onSubmit={onSubmit}>
-      <h1>Sign In</h1>
+      <h1>Sign Up</h1>
       <div className="form-group">
         <label>Email Address</label>
         <input
@@ -39,7 +39,7 @@ const SignUp = () => {
         />
       </div>
       {errors}
-      <button className="btn btn-primary">Sign In</button>
+      <button className="btn btn-primary">Sign Up</button>
     </form>
   );
 };

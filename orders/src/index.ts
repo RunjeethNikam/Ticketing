@@ -61,7 +61,7 @@ const start = async () => {
   await initilizeMongo();
 
   app.listen(3000, () => {
-    console.log("Listening on port 3000!!!!!!!!");
+    console.log("Listening on port 3000, Thank You");
   });
 };
 
