@@ -15,7 +15,7 @@ app.set("trust proxy", true);
 // Middlewares
 app.use(json());
 app.use(
-  cookieSession({ signed: false, secure: process.env.NODE_ENV !== "test" })
+  cookieSession({ signed: false, secure: false })
 );
 
 // Routers
