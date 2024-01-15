@@ -10,4 +10,4 @@ export interface TicketUpdatedEvent {
     version: number;
     orderId?: string;
   };
-}
+};
